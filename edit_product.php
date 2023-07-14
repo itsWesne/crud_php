@@ -38,7 +38,7 @@ $id = $_GET['id'];
                     <input type="number" class="form-control" name="id" value=<?php echo $id ?> style="display: none">
                     <span class="input-group-text" id="basic-addon1">Categoria</span>
 
-                    <select class="form-select" name="category" aria-label="Default select example"  value="<?php echo $category?>"  required>
+                    <select class="form-select" name="category" aria-label="Default select example" value="<?php echo $category ?>" required>
                         <option>Controles</option>
                         <option>Teclados</option>
                         <option>Mouses</option>

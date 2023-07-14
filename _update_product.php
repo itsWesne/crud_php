@@ -15,6 +15,8 @@ $product_description = $_POST['product_description'];
 
 
 $sql = "UPDATE `produtos` SET `NOME_PRODUTO` = '$product_name',
- `CATEGORIA` = '$category', `QUANTIDADE` = $quantity WHERE `ID_PRODUTO` = $id";
+ `CATEGORIA` = '$category', `QUANTIDADE` = $quantity, `DESCRICAO_PRODUTO` = '$product_description' WHERE `ID_PRODUTO` = $id";
 
-$update = mysqli_query($con, $sql);
+$update_product = mysqli_query($con, $sql);
+
+header("location:register_product.php");

@@ -42,12 +42,14 @@
                     <td><?php echo $product_description ?></td>
                     <td> <?php echo $category ?></td>
                     <td><?php echo $quantity ?></td>
-                    <td><a class="btn btn-primary btn-sm" href="edit_product.php?id=<?php echo $id_stock ?>" role="button"><i class="fa-regular fa-pen-to-square"></i>Editar</a></td>
+                    <td><a class="btn btn-primary btn-sm" href="edit_product.php?id=<?php echo $id_stock ?>" role="button"><i class="fa-regular fa-pen-to-square"></i>Editar</a>
+                    <a class="btn btn-danger btn-sm" href="del_product.php?id=<?php echo $id_stock ?>" role="button"><i class="fa-solid fa-trash"></i>Excluir</a></td>
 
                 <?php } ?>
                 </tr>
 
         </table>
+        <a href="index.php"><button class="btn btn-primary" type="button">VOLTAR</button></a>
     </div>
     <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
