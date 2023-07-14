@@ -1,0 +1,11 @@
+body{
+    /* background: linear-gradient(to bottom, #131313, black);*/
+    
+}
+
+#width-Container
+{
+    width: 1000px;
+    margin-top: 40px; 
+    border-radius: 10px;
+}
