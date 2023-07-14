@@ -5,6 +5,7 @@
         Listagem de estoque.
     </title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/76b42f17d3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,6 +19,7 @@
                     <th scope="col">DESCRIÇÃO</th>
                     <th scope="col">CATEGORIA</th>
                     <th scope="col">QUANTIDADE</th>
+                    <th scope="col">AÇÃO</TH>
                 </tr>
             </thead>
 
@@ -26,23 +28,23 @@
             $sql = "SELECT * FROM produtos";
             $search = mysqli_query($con, $sql);
 
-            while ($array = mysqli_fetch_array($search)) {
-                $id_stock = $array['ID_PRODUTO'];
-                $cod_product = $array['COD_PRODUTO'];
-                $product_name = $array['NOME_PRODUTO'];
-                $product_description = $array['DESCRICAO_PRODUTO'];
-                $category = $array['CATEGORIA'];
-                $quantity = $array['QUANTIDADE'];
+            while ($colunms = mysqli_fetch_array($search)) {
+                $id_stock = $colunms['ID_PRODUTO'];
+                $cod_product = $colunms['COD_PRODUTO'];
+                $product_name = $colunms['NOME_PRODUTO'];
+                $product_description = $colunms['DESCRICAO_PRODUTO'];
+                $category = $colunms['CATEGORIA'];
+                $quantity = $colunms['QUANTIDADE'];
             ?>
                 <tr>
-
                     <td> <?php echo $cod_product ?> </td>
                     <td><?php echo $product_name ?></td>
                     <td><?php echo $product_description ?></td>
                     <td> <?php echo $category ?></td>
                     <td><?php echo $quantity ?></td>
+                    <td><a class="btn btn-primary btn-sm" href="edit_product.php?id=<?php echo $id_stock ?>" role="button"><i class="fa-regular fa-pen-to-square"></i>Editar</a></td>
 
-        <?php } ?>
+                <?php } ?>
                 </tr>
 
         </table>
