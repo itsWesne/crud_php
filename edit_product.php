@@ -12,11 +12,10 @@ $id = $_GET['id'];
     <meta charset="utf-8">
     <title> Formulário de edição </title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="container" id="width-Container">
+<body class="bg-primary-subtle bg-gradient">
+    <div class="container rounded shadow p-3" style="background: white; margin-top: 40px">
         <h1 class="display-6">FORMULÁRIO DE EDIÇÃO</h1>
         <form action="_update_product.php" method="post" style="margin-top: 20px">
             <?php

@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
-<body>
-    <div class="container" id="width-Container">
-        <h1 class="display-6">FORMULÁRIO DE CADASTRO</h1>
+<body class="bg-primary-subtle bg-gradient">
+    <div class="container rounded shadow p-3" style="background: white; margin-top: 40px">
+        <h1 class="display-6 ">FORMULÁRIO DE CADASTRO</h1>
         <form action="_insert_product.php" method="post" style="margin-top: 20px">
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Cod</span>
@@ -32,13 +32,16 @@
 
             <div class="input-group mb-3">
                 <span class="input-group-text">Descrição do produto</span>
-                <textarea class="form-control" name="product_description" aria-label="With textarea" autocomplete="off"></textarea>
+                <textarea class="form-control" name="product_description" rows="" aria-label="With textarea" autocomplete="off"></textarea>
             </div>
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="index.php"><button class="btn btn-PRIMARY" type="button">INICIO</button></a>
                 <a href="list_products.php"><button class="btn btn-warning" type="button">ESTOQUE</button></a>
-                <button class="btn btn-success" type="submit">Cadastrar</button>
+                <button class="btn btn-success" type="submit">CADASTRAR</button>
             </div>
+
+
         </form>
     </div>
     <script type="text/javascript" src="js/bootstrap.js"></script>
