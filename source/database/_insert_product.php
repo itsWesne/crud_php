@@ -18,5 +18,5 @@ VALUES ($cod_product, '$category', '$product_name', $quantity, '$product_descrip
 
 $insert_product = mysqli_query($con, $sql);
 
-header("location:register_product.php?msg=produto_cadastrado");
+header("location:../pages/register_product.php?msg=produto_cadastrado");
 

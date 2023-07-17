@@ -19,4 +19,4 @@ $sql = "UPDATE `produtos` SET `NOME_PRODUTO` = '$product_name',
 
 $update_product = mysqli_query($con, $sql);
 
-header("location:register_product.php");
+header("location:../pages/list_products.php");

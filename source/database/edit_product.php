@@ -6,13 +6,9 @@ $id = $_GET['id'];
 
 ?>
 
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title> Formulário de edição </title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-</head>
+<?php 
+    $title_page = 'Editar estoque';
+    include '../modals/header.php'; ?>
 
 <body class="bg-primary-subtle bg-gradient">
     <div class="container rounded shadow p-3" style="background: white; margin-top: 40px">
@@ -62,8 +58,5 @@ $id = $_GET['id'];
             <?php } ?>
         </form>
     </div>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
 
-</body>
-
-</html>
+    <?php include '../modals/footer.php'; ?>

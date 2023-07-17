@@ -8,4 +8,4 @@ $sql = "DELETE FROM `produtos` WHERE `ID_PRODUTO` = $id";
 
 $delete_product = mysqli_query($con, $sql);
 
-header("location:register_product.php");
+header("location:../pages/list_products.php");
