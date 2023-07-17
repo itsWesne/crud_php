@@ -6,7 +6,7 @@ $title_page = 'Login';
 <body class="bg-primary-subtle bg-gradient" onselectstart="return false">
     <div class="container col-md-3">
 
-        <div class="card" style="margin-top: 66%;">
+        <div class="card" style="margin-top: 50.5%;">
             <div class="card-header text-center text-bg-primary">
                 .:: LOGIN ::.
             </div>
@@ -38,7 +38,7 @@ $title_page = 'Login';
                     ?>
                         <div class="card-footer input-group mb-3 text-bg-danger">
                             Usuario ou senha incorretos!<br>
-                            Tente admin/admin
+                            Utilize admin/admin
                         </div>
                     <?php
                     };
