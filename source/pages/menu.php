@@ -1,6 +1,6 @@
 <?php 
     $title_page = 'Menu';
-    include '../modals/header.php'; ?>
+    include '../models/header.php'; ?>
 
 <body class="bg-primary-subtle bg-gradient" onselectstart="return false">
     <div class="container" style="margin-top: 40px">
@@ -42,4 +42,4 @@
         </div>
     </div>
 
-<?php include '../modals/footer.php'; ?>
+<?php include '../models/footer.php'; ?>

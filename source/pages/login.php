@@ -1,6 +1,6 @@
 <?php
 $title_page = 'Login';
-    include 'source/modals/header.php';
+    include 'source/models/header.php';
 ?>
 
 <body class="bg-primary-subtle bg-gradient" onselectstart="return false">
@@ -49,5 +49,5 @@ $title_page = 'Login';
     </div>
    
     <?php 
-        include 'source/modals/footer.php';
+        include 'source/models/footer.php';
     ?>
